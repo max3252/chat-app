@@ -4,7 +4,7 @@
   </div>
   <!-- 下のdivタグは模範解答では、さらにdivタグを増やし、"chat-exit"の親要素として記述している。現時点でブラウザ上に問題無いためこのままの記述でいく。なぜもう一つdivタグを追加するかがわからない -->
   <div class="chat-exit">
-    <a href="#">チャットを終了する</a>
+    <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
   </div>
 </div>
 
